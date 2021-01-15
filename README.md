@@ -1,7 +1,7 @@
-#Country Quiz
+# Country Quiz
 Quiz sobre países com modalidade para adivinhar o país pela sua bandeira ou sua capital.
 
-#Estudado
+# Estudado
 * React
 * Styled Components
 * Manipulação de dados de API
