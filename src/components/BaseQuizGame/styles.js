@@ -9,3 +9,13 @@ export const Wrapper = styled.div`
   align-items: center;
   background: url(${bgImg});
 `;
+
+export const StartButton = styled.button`
+  color: black;
+  background-color: #f9a826;
+  font-size: 2rem;
+  border-radius: 1.2rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  border: 0;
+`;

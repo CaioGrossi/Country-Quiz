@@ -1,5 +1,8 @@
+import BaseQuizGame from "../../components/BaseQuizGame";
+import { getDataForGuessPopulation } from "../../services/api";
+
 const GuessPopulation = () => {
-  return <h1>Guess population</h1>;
+  return <BaseQuizGame apiFunction={getDataForGuessPopulation} />;
 };
 
 export default GuessPopulation;

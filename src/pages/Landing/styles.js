@@ -21,9 +21,14 @@ export const Content = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
   > h1 {
     text-align: center;
     font-size: 3rem;
+  }
+
+  @media (max-width: 1024px) {
+    margin: 0 1rem;
   }
 `;
 
@@ -45,5 +50,9 @@ export const GameOptionButton = styled.button`
 
   &:hover {
     background-color: #ebcb31;
+  }
+
+  @media (max-width: 1024px) {
+    width: 80%;
   }
 `;

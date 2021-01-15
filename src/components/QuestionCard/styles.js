@@ -22,6 +22,11 @@ export const Wrapper = styled.main`
   width: 47rem;
   height: 57.5rem;
   margin: auto;
+
+  @media (max-width: 1024px) {
+    width: 30rem;
+    height: 40rem;
+  }
 `;
 
 export const Header = styled.div`
@@ -58,6 +63,15 @@ export const Content = styled.div`
     width: auto;
     height: auto;
   }
+
+  @media (max-width: 1024px) {
+    > img {
+      max-width: 10rem;
+      max-height: 6rem;
+      width: auto;
+      height: auto;
+    }
+  }
 `;
 
 export const AnswersOptions = styled.button`
@@ -76,6 +90,11 @@ export const AnswersOptions = styled.button`
     }
     ${answered && correct && answerModifier.correct()}
     ${wasClicked && !correct && answerModifier.incorrect()}
+
+    @media (max-width: 1024px) {
+      width: 22rem;
+      height: 3rem;
+    }
   `}
 `;
 
