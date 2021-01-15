@@ -56,35 +56,4 @@ async function getDataForGuessCountry() {
   return questions;
 }
 
-async function getDataForGuessPopulation() {
-  let data = await (await fetch("https://restcountries.eu/rest/v2/all")).json();
-
-  let shuffledArray = shuffleArray(data);
-  let countrysData = shuffledArray.slice(0, 20);
-  countrysData.push({});
-
-  let questions = [];
-
-  for (let i = 0; i <= 16; i += 4) {
-    let currentCountrys = countrysData.slice(i, i + 4);
-    let selectedCountry = currentCountrys[Math.floor(Math.random() * 4)];
-
-    let question = `The population of the country ${selectedCountry.name} is:`;
-    let correct_answer = selectedCountry.population;
-    let answers = currentCountrys.map((country) => country.population);
-
-    questions.push({
-      question,
-      correct_answer,
-      answers,
-    });
-  }
-
-  return questions;
-}
-
-export {
-  getDataForGuessCapital,
-  getDataForGuessCountry,
-  getDataForGuessPopulation,
-};
+export { getDataForGuessCapital, getDataForGuessCountry };

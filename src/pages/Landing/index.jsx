@@ -15,10 +15,6 @@ const Landing = () => {
         <S.GameOptionButton>
           <Link to="/guess-capital">Guess coutry's capital</Link>
         </S.GameOptionButton>
-
-        <S.GameOptionButton>
-          <Link to="/guess-population">Guess coutry's population</Link>
-        </S.GameOptionButton>
       </S.Content>
     </S.Wrapper>
   );
