@@ -2,7 +2,11 @@
 Quiz sobre países, podendo escolher entre acertar o país pela bandeira ou acertar a capital do país. A aplicação consome uma API que retorna somente dados de paíse, toda a criação de perguntas e respostas é feita pela própria aplicação manipulando os dados recebidos.
 
 <p align="center">
-  <img src="/demo/react-to-do-list.gif" />
+  <img src="/demo/guess-by-flag.gif" />
+</p>
+
+<p align="center">
+  <img src="/demo/guess-capital.gif" />
 </p>
 
 ## Pré-requisitos
